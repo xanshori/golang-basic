@@ -2,6 +2,8 @@
 
 Ini adalah proyek sederhana yang mencakup berbagai contoh dasar dalam pemrograman Go (Golang). Proyek ini dibuat dengan tujuan edukasi dan demonstrasi. Harap diingat bahwa proyek ini mungkin mengandung beberapa kesalahan atau perbaikan yang dapat dilakukan.
 
+**Catatan**: Materi ini dipelajari dengan referensi dari video pembelajaran di YouTube oleh "Programmer Zaman Now". Silakan kunjungi [YouTube Programmer Zaman Now](https://www.youtube.com/programmerzamannow) untuk sumber pembelajaran yang lebih lengkap.
+
 ## Daftar File
 
 Berikut adalah daftar lengkap file dalam proyek ini:
@@ -36,4 +38,3 @@ Berikut adalah daftar lengkap file dalam proyek ini:
 28. `28-anonymous-function.go`: Demonstrasi penggunaan fungsi anonim.
 29. `29-recrusive-function.go`: Demonstrasi penggunaan fungsi rekursif.
 30. `30-closure.go`: Demonstrasi penggunaan closure.
-
