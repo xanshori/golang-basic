@@ -33,4 +33,13 @@ func main() {
 	}
 	fmt.Println(len(kelas))
 	fmt.Println(kelas[0])
+
+	datas := []string{
+		"alexandra","jasmine","aliyah",
+	}
+	
+	for _, data := range datas {
+		fmt.Println("halo nama saya -> ",data)
+	}
+	fmt.Println(datas)
 }
