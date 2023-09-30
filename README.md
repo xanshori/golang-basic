@@ -38,3 +38,10 @@ Berikut adalah daftar lengkap file dalam proyek ini:
 28. `28-anonymous-function.go`: Demonstrasi penggunaan fungsi anonim.
 29. `29-recrusive-function.go`: Demonstrasi penggunaan fungsi rekursif.
 30. `30-closure.go`: Demonstrasi penggunaan closure.
+31. `31-defer.go`: Demonstrasi penggunaan `defer` untuk menunda eksekusi suatu pernyataan hingga fungsi yang mengandungnya selesai dijalankan.
+32. `32-panic.go`: Demonstrasi penggunaan `panic` untuk menghentikan eksekusi program dengan kesalahan yang tidak dapat ditangani.
+33. `33-recover.go`: Demonstrasi penggunaan `recover` untuk memulihkan program dari situasi `panic`.
+34. `34-comment.go`: Contoh penggunaan komentar dalam kode Go untuk memberikan penjelasan dan dokumentasi.
+35. `35-struct.go`: Demonstrasi penggunaan tipe data `struct` untuk membuat jenis data yang kompleks dengan berbagai bidang (fields).
+36. `36-struct-method.go`: Demonstrasi penggunaan metode pada tipe data `struct` untuk menambahkan fungsi khusus yang terkait dengan jenis data tersebut.
+37. `37-interface.go`: Demonstrasi penggunaan antarmuka (interface) untuk mendefinisikan kontrak yang harus dipatuhi oleh tipe data lain.
