@@ -2,20 +2,20 @@ package main
 
 import "fmt"
 
-func mean(datas ...int) int {
+func mean(datas ...int) []float32 {
 	result := 0
 	for i := 0; i < len(datas); i++ {
 		result += datas[i]
 	}
-	return result / len(datas)
+	mean:=[]float32{}
+	mean = append(mean,float32(result )/ float32(len(datas)))
+	return mean
 }
-
+ 
 func sortfunction(arr []int) []int {
 	if len(arr) <= 1 {
 		return arr
 	}
-
-
 	pivot := arr[len(arr)/2]
 	left := []int{}
 	mid := []int{}
@@ -23,9 +23,9 @@ func sortfunction(arr []int) []int {
 	for i := 0; i < len(arr); i++ {
 		if arr[i] < pivot {
 			left = append(left, arr[i])
-		}else if arr[i] == pivot {
+		} else if arr[i] == pivot {
 			mid = append(mid, arr[i])
-		}else{
+		} else {
 			if arr[i] > pivot {
 				right = append(right, arr[i])
 			}
@@ -40,36 +40,34 @@ func sortfunction(arr []int) []int {
 
 }
 
-func medianAlgorithm(x ...int)interface{} {
+func medianAlgorithm(x ...int) interface{} {
 	arr := sortfunction(x)
-	fmt.Println(arr)
 	if len(arr)%2 == 0 {
 		//  jumlah array genap
 		median := []float32{}
-		// berisi penjumlahan array ketika ada dua array [10]+[10] = [20]
-		leftmid := []int{len(arr)/2-1}
-		rightmid := []int{len(arr)/2+1}
+		leftmid := []int{len(arr)/2 - 1}
+		rightmid := []int{len(arr)/2 + 1}
 		slicearr := arr[leftmid[0]:rightmid[0]]
 		jumlahmedian := 0
 		for i := 0; i < len(slicearr); i++ {
-			jumlahmedian+=slicearr[i]
+			jumlahmedian += slicearr[i]
 		}
-		median=append(median,float32(jumlahmedian)/2)
+		median = append(median, float32(jumlahmedian)/2)
 		return median
 	} else {
 		// jumlah array ganjil
 		median := []int{}
 		// berisi penjumlahan array ketika ada dua array [10]+[10] = [20]
-		array:=0
+		array := 0
 		for i := 0; i < len(arr); i++ {
 			if arr[i] == arr[len(arr)/2] {
-			array+=arr[i]
-				if len(median)<1{
+				array += arr[i]
+				if len(median) < 1 {
 					median = append(median, arr[i])
-				}else{
-					median = []int{array/2}
+				} else {
+					median = []int{array / 2}
 				}
-				
+
 			}
 		}
 		return median
@@ -79,13 +77,13 @@ func medianAlgorithm(x ...int)interface{} {
 
 func main() {
 	df := []int{
-		50, 50, 50, 50,
+		50, 11, 50, 50,
 	}
-	fmt.Println(mean(df...))
+	fmt.Println("mean dari", df, "adalah :", mean(df...))
 
 	df2 := []int{
-		10,21,30,40,
+		10, 21, 30, 30, 40,
 	}
 
-	fmt.Println(medianAlgorithm(df2...))
+	fmt.Println("median dari", df2, " adalah :", medianAlgorithm(df2...))
 }
