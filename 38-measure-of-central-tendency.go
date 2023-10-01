@@ -40,7 +40,7 @@ func sortfunction(arr []int) []int {
 
 }
 
-func medianAlgorithm(x ...int) interface{} {
+func medianAlgorithm(x ...int) (array []int,median interface{}) {
 	arr := sortfunction(x)
 	if len(arr)%2 == 0 {
 		//  jumlah array genap
@@ -53,7 +53,7 @@ func medianAlgorithm(x ...int) interface{} {
 			jumlahmedian += slicearr[i]
 		}
 		median = append(median, float32(jumlahmedian)/2)
-		return median
+		return arr,median
 	} else {
 		// jumlah array ganjil
 		median := []int{}
@@ -70,7 +70,7 @@ func medianAlgorithm(x ...int) interface{} {
 
 			}
 		}
-		return median
+		return arr, median
 	}
 
 }
@@ -79,11 +79,12 @@ func main() {
 	df := []int{
 		50, 11, 50, 50,
 	}
-	fmt.Println("mean dari", df, "adalah :", meanAlgorithm(df...))
+	mean:=meanAlgorithm(df...)
+	fmt.Println("mean dari", df, "adalah :", mean)
 
 	df2 := []int{
-		10, 21, 30, 30, 40,
+		100, 21,20, 30, 
 	}
-
-	fmt.Println("median dari", df2, " adalah :", medianAlgorithm(df2...))
+	arrmedian,median :=medianAlgorithm(df2...)
+	fmt.Println("median dari", arrmedian, " adalah :", median)
 }
