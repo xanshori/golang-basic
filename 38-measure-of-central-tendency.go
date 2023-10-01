@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func mean(datas ...int) []float32 {
+func meanAlgorithm(datas ...int) []float32 {
 	result := 0
 	for i := 0; i < len(datas); i++ {
 		result += datas[i]
@@ -79,7 +79,7 @@ func main() {
 	df := []int{
 		50, 11, 50, 50,
 	}
-	fmt.Println("mean dari", df, "adalah :", mean(df...))
+	fmt.Println("mean dari", df, "adalah :", meanAlgorithm(df...))
 
 	df2 := []int{
 		10, 21, 30, 30, 40,
