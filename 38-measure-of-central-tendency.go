@@ -71,6 +71,10 @@ func medianAlgorithm(x ...int) (array []int, median interface{}) {
 	}
 }
 
+func modus(){
+	
+}
+
 func main() {
 	df := []int{
 		50, 11, 50, 50,
