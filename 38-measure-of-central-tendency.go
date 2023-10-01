@@ -43,7 +43,6 @@ func sortfunction(arr []int) []int {
 func medianAlgorithm(x ...int) (array []int, median interface{}) {
 	arr := sortfunction(x)
 	if len(arr)%2 == 0 {
-		//  jumlah array genap
 		median := []float32{}
 		leftmid := []int{len(arr)/2 - 1}
 		rightmid := []int{len(arr)/2 + 1}
@@ -55,9 +54,7 @@ func medianAlgorithm(x ...int) (array []int, median interface{}) {
 		median = append(median, float32(jumlahmedian)/2)
 		return arr, median
 	} else {
-		// jumlah array ganjil
 		median := []int{}
-		// berisi penjumlahan array ketika ada dua array [10]+[10] = [20]
 		array := 0
 		for i := 0; i < len(arr); i++ {
 			if arr[i] == arr[len(arr)/2] {
@@ -72,7 +69,6 @@ func medianAlgorithm(x ...int) (array []int, median interface{}) {
 		}
 		return arr, median
 	}
-
 }
 
 func main() {
@@ -87,4 +83,6 @@ func main() {
 	}
 	arrmedian, median := medianAlgorithm(df2...)
 	fmt.Println("median dari", arrmedian, " adalah :", median)
+
+	fmt.Scanln()
 }
