@@ -1,9 +1,9 @@
 package main
 
 import (
-	"basic/helper"
+	"golang-basic/helper"
 	// blank identifier
-	_"basic/database"
+	_"golang-basic/database"
 )
 
 

@@ -10,6 +10,7 @@ func main() {
 
 	const (
 		umur = 20
+		
 		kelas = "IT"
 	)
 	fmt.Println(umur)

@@ -10,11 +10,11 @@ func random() interface{} {
 
 func main() {
 	result := random()
-	switch value:=result.(type){
+	switch value := result.(type) {
 	case string:
-		fmt.Println("string",value)
+		fmt.Println("string", value)
 	case int:
-		fmt.Println("integer",value)
+		fmt.Println("integer", value)
 	}
 
 }
