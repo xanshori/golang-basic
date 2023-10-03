@@ -6,14 +6,14 @@ func endApp() {
 	fmt.Println("app ended")
 }
 
-func runApp(error bool){
+func runApp(error bool) {
 	// tujuanya mengabaikan error dan akan dipanggil ketika
 	// fungsi ini selesai dijalankan atau berada dipaling akhir
 	defer endApp()
 	if error{
-		panic("Aplikasi Error")
+		panic("aplikasi err")
 	}
-	// tidak akan di eksekusi jika error adalah true 
+	// tidak akan di eksekusi jika error adalah true
 	fmt.Println("Aplikasi Berjalan")
 }
 func main() {
