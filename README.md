@@ -45,3 +45,12 @@ Berikut adalah daftar lengkap file dalam proyek ini:
 35. `35-struct.go`: Demonstrasi penggunaan tipe data `struct` untuk membuat jenis data yang kompleks dengan berbagai bidang (fields).
 36. `36-struct-method.go`: Demonstrasi penggunaan metode pada tipe data `struct` untuk menambahkan fungsi khusus yang terkait dengan jenis data tersebut.
 37. `37-interface.go`: Demonstrasi penggunaan antarmuka (interface) untuk mendefinisikan kontrak yang harus dipatuhi oleh tipe data lain.
+38. `38-measure-of-central-tendency.go`: Contoh penggunaan berbagai metode untuk menghitung ukuran pusat dalam statistik.
+39. `39-assertions.go`: Demonstrasi penggunaan asertasi (assertions) dalam Go untuk memeriksa tipe data.
+40. `40-pointer.go`: Demonstrasi penggunaan pointer untuk mengakses dan memanipulasi alamat memori.
+41. `41-pointer-function.go`: Demonstrasi penggunaan pointer dalam parameter fungsi.
+42. `42-ponter-method.go`: Demonstrasi penggunaan metode pada tipe data pointer.
+43. `43-package.go`: Demonstrasi penggunaan paket (package) dalam Go untuk mengorganisasi kode.
+44. `44-package-os.go`: Demonstrasi penggunaan paket `os` dalam Go untuk berinteraksi dengan sistem operasi.
+
+Silakan jelajahi setiap file untuk memahami lebih lanjut tentang konsep dasar pemrograman Go yang dijelaskan dalam proyek ini.
